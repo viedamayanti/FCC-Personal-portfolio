@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  border: #e1dfdb 0.1px solid;
+  width: 100%;
+  background-color: #e1dfdb;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 10px;
+}
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+  background-color: #30302f;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+#nav-list {
+  display: flex;
+  gap: 70px;
+  margin-right: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+  font-size: 19px;
+}
+
+#main-page {
+  margin: 0 auto;
+  margin-top: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  height: 400px;
+  position: relative;
+  background-color: #bababa;
+  z-index: -1;
+}
+#welcome-section {
+  padding-top: 130px;
+  padding-left: 150px;
+  width: 100%;
+  height: 100vh;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+p {
+  font-family: 'Linden Hill', serif;
+  font-size: 20px;
+}
+.cv-btn {
+  background-color: #30302f;
+  color: #f5f5f5;
+  border: #30302f solid 2px;
+  padding: 5px;
+  width: 120px;
+  font-size: 13px;
+  border-radius: 3px;
+  font-family: 'Linden Hill', serif;
+  cursor: pointer;
+}
+.rectangle {
+  float: right;
+  height: 510px;
+  width: 200px;
+  background-color: #9d85b8;
+  margin-right: 90px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+h2 {
+  font-family: 'Linden Hill', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.projects-line,
+.projects-line2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  width: 200px;
+  height: 170px;
+  z-index: 2;
+}
+
+.select-btn {
+  width: 200px;
+  height: 31px;
+  background-color: #9d85b8;
+  border: #9d85b8 solid 1px;
+  font-family: 'Linden Hill', serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contact-links {
+  font-size: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #30302f;
+  color: #e1dfdb;
+  margin-top: 100px;
+  font-size: 15px;
+  font-family: 'Linden Hill', serif;
+}
+
+@media only screen and (max-width: 950px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-size: 70%;
+  }
+  .rectangle {
+    margin-right: 20px;
+  }
+  #welcome-section {
+    padding-left: 40px;
+    z-index: 1;
+  }
+  #main-page {
+    width: 100vw;
+  }
+  #projects-line1,
+  #projects-line2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
